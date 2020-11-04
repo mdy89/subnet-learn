@@ -11,6 +11,5 @@ python construct_subnetwork_representation.py [GENESET_INFORMATION.txt] [NORMALI
 2) Constructing attention networks based predictor
 python construct_predictor.py --input_table [SUBNETWORK_REPRESENTATION_TABLE.txt] --cross_validation [NUMBER] --out_dir [OUTPUT_DIR] --process_number [NUMBER]
 
-
 # Contact
 mindoly89@gmail.com
