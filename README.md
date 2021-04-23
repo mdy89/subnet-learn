@@ -17,5 +17,22 @@ python3 SRL_fit_transform.py [sSAS_OUTPUT.dir] [SRL_OUTPUT.dir]
 
 (see test.sh)
 
+# Result files
+1) subnetwork_evaluated.txt: feature evaluation results during sSAS calculation process (it's different than the SRL attention weights)
+
+2) classification_report.txt: summary of performance of the trained SRL in terms of classification power
+
+3) train_set_attention_map.txt: list of attention weights of each subnetwork in the trained SRL when passing the train data
+
+4) train_set_predictions.txt: prediction results of the trained SRL when passing the train data
+
+5) test_set_attention_map.txt: list of attention weights of each subnetwork in the trained SRL when passing the test data
+
+6) test_set_predictions.txt: prediction results of the trained SRL when passing the test data
+
+
+
+
+
 # Contact
 mindoly89@gmail.com
