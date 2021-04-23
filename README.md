@@ -7,13 +7,14 @@ Cervical lymph node metastasis is a major factor in poor prognosis in patients w
 # Usage
 1) Calculating sSAS: 
 
-ex) 
 python3 sSAS_fit_transform.py [SUBNETWORK_LIST.txt] [TRAIN_TPM_LIST.txt] [TEST_TPM_LIST.txt] [sSAS_OUTPUT.dir]
+
 (see test.sh)
 
 2) Constructing SRL:
 
 python3 SRL_fit_transform.py [sSAS_OUTPUT.dir] [SRL_OUTPUT.dir]
+
 (see test.sh)
 
 # Contact
