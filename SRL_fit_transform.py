@@ -137,7 +137,7 @@ class SRL_ModelConstructor(object):
 		report_path = self.output_dir + ss + "classification_report.txt"
 		report_file = open(report_path, 'w')
 		report_file.write("#[1]Training"+nn)
-		report_file.write(str(classification_report(ytrue, ypred))+nn)
+		report_file.write(str(classification_report(ytrue, ypred, digits=4))+nn)
 
 		#[2]
 		train_path = self.output_dir + ss + "train_set_predictions.txt"
@@ -160,7 +160,7 @@ class SRL_ModelConstructor(object):
 		ytrue = [self.label_list[np.argmax(x)] for x in self.test_set_obj.sample_label_arr]
 		ypred = [self.label_list[np.argmax(x)] for x in yhat]
 		report_file.write("#[2]Test"+nn)
-		report_file.write(str(classification_report(ytrue, ypred))+nn)
+		report_file.write(str(classification_report(ytrue, ypred, digits=4))+nn)
 		report_file.close()
 
 		#[4]
