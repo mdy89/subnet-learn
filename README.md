@@ -8,19 +8,13 @@ Cervical lymph node metastasis is a major factor in poor prognosis in patients w
 pip install -r requirements.txt
 
 # Usage
-1) Identification of Subnetworks: Subnetworks are extracted from a given set of genes and given PPI information.
-
-example code: python3 subnetwork_identification.py test_geneset_list.txt test_ppi_list.txt test.out
-
-** DeepWalk must be installed and can be called from bash: https://github.com/phanein/deepwalk
-
-2) Calculating sSAS: fitting sSAS model with train data then transforming train and test data with the model
+1) Calculating sSAS: fitting sSAS model with train data then transforming train and test data with the model
 
 python3 sSAS_fit_transform.py [SUBNETWORK_LIST.txt] [TRAIN_TPM_LIST.txt] [TEST_TPM_LIST.txt] [sSAS_OUTPUT.dir]
 
 (see test.sh)
 
-3) Constructing SRL: fitting SRL model with train data then transforming train and test data with the model with generating classification report
+2) Constructing SRL: fitting SRL model with train data then transforming train and test data with the model with generating classification report
 
 python3 SRL_fit_transform.py [sSAS_OUTPUT.dir] [SRL_OUTPUT.dir]
 
@@ -39,6 +33,13 @@ python3 SRL_fit_transform.py [sSAS_OUTPUT.dir] [SRL_OUTPUT.dir]
 
 6) test_set_predictions.txt: prediction results of the trained SRL when passing the test data
 
+# In case you want to use your own subnetworks
+
+- Identification of Subnetworks: Subnetworks are extracted from a given set of genes and given PPI information.
+
+example code: python3 subnetwork_identification.py test_geneset_list.txt test_ppi_list.txt test.out
+
+** DeepWalk must be installed and can be called from bash: https://github.com/phanein/deepwalk
 
 
 
