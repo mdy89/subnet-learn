@@ -34,12 +34,13 @@ python3 SRL_fit_transform.py [sSAS_OUTPUT.dir] [SRL_OUTPUT.dir]
 6) test_set_predictions.txt: prediction results of the trained SRL when passing the test data
 
 # In case you want to use your own subnetworks
+Identification of Subnetworks: Subnetworks are extracted from a given set of genes and given PPI information.
 
-- Identification of Subnetworks: Subnetworks are extracted from a given set of genes and given PPI information.
+example code: 
 
-example code: python3 subnetwork_identification.py test_geneset_list.txt test_ppi_list.txt test.out
+python3 subnetwork_identification.py test_geneset_list.txt test_ppi_list.txt test.out
 
-** DeepWalk must be installed and can be called from bash: https://github.com/phanein/deepwalk
+(DeepWalk must be installed and can be called from bash: https://github.com/phanein/deepwalk)
 
 
 
